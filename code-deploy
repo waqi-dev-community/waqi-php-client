@@ -76,13 +76,13 @@ sc=$[ $RANDOM % 60 + 10 ]
 array_length=${#my_array[@]}
 
 # Define an array of integers
-hour_array=(900 2400 72 900 300)
+hour_array=(90 240 72 900 48)
 
 # Get the length of the array
 hour_array_length=${#hour_array[@]}
 
 
-while [ $counter -le 8 ]
+while [ $counter -le 5 ]
  do
       commit_counter=0
       commit_count_array=(0 2 15 3 10 1 0 10 2 4)
@@ -97,7 +97,7 @@ while [ $counter -le 8 ]
           # Get the element at the random index
           random_element="${my_array[random_index]}"
 
-           dateUsed=$(gdate -d "2022-05-29 $random_hour_element hours $mn minutes $sc seconds" "+%a %b %d %H:%M:%S %Y %z")
+           dateUsed=$(gdate -d "2022-04-16 $random_hour_element hours $mn minutes $sc seconds" "+%a %b %d %H:%M:%S %Y %z")
            echo $dateUsed > npm.md
            git add .
            git commit -m "$random_element"
