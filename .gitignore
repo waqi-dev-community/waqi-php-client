@@ -1,0 +1,10 @@
+vendor
+index.php
+build
+composer.lock
+phpcs.xml
+phpunit.xml
+.idea/
+.phpunit.result.cache
+.DS_Store
+src/.DS_Store
