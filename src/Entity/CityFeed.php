@@ -11,6 +11,9 @@ class CityFeed extends WaqiAPIEntity
 
     protected function url() 
     {
-        return "{$this->baseUrl}feed/";
+        // /feed/:city/?token=:token
+        $url = "{$this->baseUrl}feed/{$this->queryParams['city']}/";
+        $this->queryParams = [];
+        return $url;
     }
 }

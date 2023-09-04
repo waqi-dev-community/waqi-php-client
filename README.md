@@ -43,7 +43,7 @@ $response = $api->search()
 
 ```php
 $response = $api->geoFeed()
-    ->setCoordinates(4, 11)
+    ->setCoordinates(37.7749, -122.4194)
     ->fetch();
 ```
 
@@ -59,6 +59,6 @@ $response = $api->ipFeed()
 
 ```php
 $response = $api->mapStation()
-    ->setMapBounds(4, 11, 3, 13)
+    ->setMapBounds(40.712, -74.006, 34.052, -118.243)
     ->fetch();
 ```

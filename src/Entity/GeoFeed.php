@@ -12,6 +12,9 @@ class GeoFeed extends WaqiAPIEntity
 
     protected function url() 
     {
-        return "{$this->baseUrl}feed/geo:";
+        // /feed/geo::lat;:lng/?token=:token
+        $url = "{$this->baseUrl}feed/geo:{$this->queryParams['lat']};{$this->queryParams['lon']}/";
+        $this->queryParams = [];
+        return $url;
     }
 }
