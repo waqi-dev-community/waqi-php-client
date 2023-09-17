@@ -8,7 +8,7 @@ All available API modules are supported - City feed, Geolocalized feed, Search, 
 You can install this package with composer using the command below
 
 ```shell
- composer require nonsoniyi/waqi-php-client
+ composer require waqidevs/waqi-php-client
 ```
 
 ### Get API key

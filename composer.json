@@ -1,5 +1,5 @@
 {
-    "name": "nonsoniyi/waqi-php-client",
+    "name": "waqidevs/waqi-php-client",
     "description": "PHP wrapper for the AQICN (air quality) APIs",
     "keywords": ["AQICN", "API", "wrapper", "WAQI", "air quality"],
     "homepage": "https://github.com/waqi-dev-community/waqi-php-client",
